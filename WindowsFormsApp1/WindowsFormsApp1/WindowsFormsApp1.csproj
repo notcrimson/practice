@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,10 +61,61 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Директор.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Директор.Designer.cs">
+      <DependentUpon>Директор.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Кладовщик.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Кладовщик.Designer.cs">
+      <DependentUpon>Кладовщик.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Заказчик.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Заказчик.Designer.cs">
+      <DependentUpon>Заказчик.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Менеджер.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Менеджер.Designer.cs">
+      <DependentUpon>Менеджер.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user20DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>user20DataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Директор.resx">
+      <DependentUpon>Директор.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Заказчик.resx">
+      <DependentUpon>Заказчик.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Кладовщик.resx">
+      <DependentUpon>Кладовщик.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Менеджер.resx">
+      <DependentUpon>Менеджер.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +126,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +136,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="user20DataSet.xsc">
+      <DependentUpon>user20DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="user20DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>user20DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="user20DataSet.xss">
+      <DependentUpon>user20DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
